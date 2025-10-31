@@ -2,6 +2,8 @@
     --primary-colors: #004b87;
     --secondary-colors: #f4f4f4;
     --text-color: #333;
+    --base-color:#003366;
+    --white-color:#ffffff;
 }
 
 body {
@@ -24,7 +26,7 @@ main {
 
 header {
     background-color: var(--primary-colors);
-    color: white;
+    color: var(--white-color)
     text-align: center;
     padding: 1.5rem 1rem;
 }
@@ -37,7 +39,7 @@ nav{
 }
 
 nav a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
 }
@@ -100,7 +102,7 @@ nav a:hover {
     transform: translateX(-50%);
     width: 120%;
     height: 3px;
-    background-color: #003366;
+    background-color: var(--base-color);
     border-radius: 2px;
 }
 
@@ -130,30 +132,27 @@ nav a:hover {
 .country-name {
     margin-top: 0.5rem;
     font-weight: bold;
-    color: #003366;
+    color: var(--base-color);
 }
 
 
 .card {
-    background: white;
+    background: var(--white-color);
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
 }
 
 .card h2 {
-    background-color: #003366;
+    background-color: var(--base-color);
     color: white;
     text-align: center;
     margin: -1rem -1rem 1rem -1rem;
     padding: 0.75rem 1rem;
-    /* border-bottom-left-radius: 10px; */
-    /* border-bottom-right-radius: 10px; */
     font-size: 1.2rem;
 }
 
 .card img {
-    /* width: 100%; */
     border-radius: 12px;
     margin-bottom: 0.5rem;
 }
@@ -162,7 +161,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     background: var(--primary-colors);
-    color: white;
+    color: var(--white-color);
     margin-top: 2rem;
 }
 
@@ -176,10 +175,10 @@ h3 {
 }
 
 section {
-    border: 3px solid #003366;
+    border: 3px solid var(--base-color);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--secondary-colors);
 }
 
 
