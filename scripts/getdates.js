@@ -1,37 +1,28 @@
 // scripts/getdates.js
 (function () {
-  // Safe guard: run when DOM is ready
   function init() {
-    const yearSpan = document.getElementById("currentyear");
-    const modifiedParagraph = document.getElementById("lastModified");
-
+    // find element (try both id and data attribute just in case)
+    const yearSpan = document.getElementById("currentyear") || document.querySelector("[data-currentyear]");
     if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
+      try {
+        yearSpan.textContent = new Date().getFullYear();
+      } catch (err) {
+        console.error("Error writing current year:", err);
+      }
     } else {
-      console.warn("getdates.js: #currentyear element not found.");
+      console.warn("getdates.js: #currentyear element not found. Check your HTML id or path to script.");
     }
 
+    const modifiedParagraph = document.getElementById("lastModified");
     if (modifiedParagraph) {
-      // document.lastModified sometimes returns "" in some setups (file://), so guard that
       const raw = document.lastModified;
       if (!raw || raw.trim() === "") {
         modifiedParagraph.textContent = "Last Modified: (not available)";
       } else {
-        // format into a human-friendly date
         const d = new Date(raw);
-        // if Date(raw) is invalid, fall back to raw string
-        if (isNaN(d.getTime())) {
-          modifiedParagraph.textContent = `Last Modified: ${raw}`;
-        } else {
-          modifiedParagraph.textContent = `Last Modified: ${d.toLocaleString(undefined, {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit"
-          })}`;
-        }
+        modifiedParagraph.textContent = isNaN(d.getTime())
+          ? `Last Modified: ${raw}`
+          : `Last Modified: ${d.toLocaleString()}`;
       }
     } else {
       console.warn("getdates.js: #lastModified element not found.");
@@ -44,9 +35,3 @@
     init();
   }
 })();
-
-// const currentYear = new Date().getFullYear();
-// document.getElementById("currentYear").textContent = currentYear;
-// const lastModified = document.lastModified;
-// document.getElementById("lastModified").textContent = 'Last Modified: $ {lastModified}';
-// document.querySelector("#year").textContent = new Date().getFullYear();
