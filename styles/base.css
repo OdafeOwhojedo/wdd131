@@ -48,7 +48,12 @@ nav a:hover {
 }
 
 #course-title {
-    /* display: block; */
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#inner-course-title {
     font-size: 1.25rem;
     color: greenyellow;
 }
