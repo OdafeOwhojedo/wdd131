@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Erikevwie Odafe | Home page for class assignments and web development projects ">
+    <meta name="author" content="Odafe Erikevwie">
+    <title>WDD 131 - Dynamic Web Fundamentals - Odafe Erikevwie</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <!--Google Font Example-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+       <h1>WDD 131 - Dynamic Web Fundamentals - <span id="course-title">Erikevwie Odafe</span> </h1>
+     
+       <nav class="navigation">
+            <a href="https://www.linkedin.com/in/erikevwieodafe/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lan=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+     
+    <main>
+        <!-- <h1>Odafe Erikevwie</h1> -->
+        
+        <section class="card" id="about-me" >
+            <h2>About Me</h2>
+            <div class="intro">
+                <div class="intro-text">
+                  <p>Hello! My name is Odafe, and I am a software and web development student learning HTML, CSS, and Javascript. I take great delight in creating clean, accessible and eye-catching web designs as well and I love very much to explore new technologies and innovative ideas. I love programming, reading tech blogs, and helping others learn to become a full-stack web developer. </p>
+             
+                </div>
+                <div class="intro-image">
+                   <img src="images/profile.jpg" alt="Photo of Odafe Erikevwie" width="100">
+                </div>
+            </div>
+            <h3>Delta state, Nigeria</h3>
+            <div class="country">
+                <div class="country-flag">
+                    <img src="images/Nigeria-flag.svg" alt="Nigeria Flag" width="100">
+                    <p class="country-mane">Official Flag of Nigeria</p>
+                    
+                </div>
+                <div class="country-text">
+                    <p>I am from Delta state in Nigeria, a beautiful country known for its cultural diversity, creativity, and vibrant energy. I take pride in representing my country wherever I go. Nigeria is one of Africa's most producer of crude oil and Delta state is the second largest state in crude oil production </p>
+                </div>
+            </div>
+  
+            
+        </section>
+        <section class="card">
+            <h2>Web Development Tools</h2>
+            <ul>
+                <li><a href="datacommunity">Dev.to Community</a></li>
+                <li><a href="smashingmagazine">Smashing Magazine</a></li>
+                <li><a href="csstricks">Css Tricks</a></li>
+                <li><a href="w3schools">W3 Schools</a></li>
+                <li><a href="udemy">Udemy</a></li>
+                <li><a href="imageplaceholder">Image Placeholder</a></li>
+            </ul>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Odafe Erikevwie | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
