@@ -26,7 +26,7 @@ main {
 
 header {
     background-color: var(--primary-colors);
-    color: var(--white-color)
+    color: var(--white-color);
     text-align: center;
     padding: 1.5rem 1rem;
 }
@@ -156,6 +156,7 @@ nav a:hover {
     border-radius: 12px;
     margin-bottom: 0.5rem;
 }
+
 
 footer {
     text-align: center;
