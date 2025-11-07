@@ -36,12 +36,19 @@
   }
 })();
 
-// The responsive Navigation (Hamburger)
 const menuButton = document.querySelector("#menu");
 const navMenu = document.querySelector("#nav-menu");
 
 menuButton.addEventListener("click", () => {
-  const visible = navMenu.style.display === "flex";
-  navMenu.style.display = visible ? "none" : "flex";
-  menuButton.textContent = visible ? "☰" : "✖";
+  navMenu.classList.toggle("open");
+  menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
 });
+// The responsive Navigation (Hamburger)
+// const menuButton = document.querySelector("#menu");
+// const navMenu = document.querySelector("#nav-menu");
+
+// menuButton.addEventListener("click", () => {
+//   const visible = navMenu.style.display === "flex";
+//   navMenu.style.display = visible ? "none" : "flex";
+//   menuButton.textContent = visible ? "☰" : "✖";
+// });

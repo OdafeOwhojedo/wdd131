@@ -38,23 +38,52 @@ header h1 {
     cursor: pointer;
 }
 
-nav {
+#nav-menu {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  background-color: var(--secondary-color);
+}
+
+#nav-menu.open {
+  display: flex; /* show when class is toggled */
+}
+
+#nav-menu a {
+  display: block;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-menu a:hover,
+#nav-menu a:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* nav {
     display: none;
     flex-direction: column;
     background-color: var(--secondary-color);
-}
+} */
 
-nav a {
+/* nav a {
     color: white;
     text-decoration: none;
     padding: 0.8rem;
-    border-top: 1px solid rgb(225, 225, 225, 0.2);
-}
+    border-top: 1px solid rgb(225, 225, 225, 0.2); 
+    
+} */
 
-nav a :hover{
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-}
+/* nav a :hover{
+    
+     color: #ffd700;
+     text-decoration: underline;
+    
+} */
 
 /* MAIN */
 main {

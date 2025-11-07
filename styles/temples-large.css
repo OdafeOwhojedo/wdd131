@@ -3,16 +3,35 @@
         display: none;
     }
 
-    nav {
+        #nav-menu {
+    display: flex !important;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    }
+
+    #nav-menu a {
+    border: none;
+    padding: 1rem 2rem;
+    }
+
+    #nav-menu a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    }
+
+
+
+
+    /* nav {
         display: flex !important;
         justify-content: center;
         background-color: #014f86;
-    }
+    } */
 
-    nav a {
+    /* nav a {
         padding: 1rem 2rem;
         border: none;
-    }
+    } */
 
     /* GRID that controls large views */
 
