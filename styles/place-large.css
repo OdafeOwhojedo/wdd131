@@ -1,47 +1,65 @@
 
 @media screen and (min-width: 700px) {
-  .weather h2 .section-icon {
-    display: none;
-  }
-  
-  .hero {
-    position: relative;
-  }
+    .weather h2 .section-icon {
+      display: none;
+    }
+    
+    /* .hero {
+      position: relative;
+    } */
 
-  .data, .weather {
+    .data {
     position: absolute;
-    /* max-width: 300px; */
+    top: 6rem;
+    left: 2rem;
     width: 260px;
     margin: 0;
   }
-  .data {
-    top: 6rem;
-    left: 2rem;
-  }
 
   .weather {
+    position: absolute;
     bottom: 4rem;
     right: 2rem;
+    width: 260px;
+    margin: 0;
   }
-  .weather h2::after {
-    content: " ⛅";             /* the emoticon required by the spec */
-    display: inline-block;
-    margin-left: 0.5rem;
-    font-size: 1.2rem;         /* scale to match heading */
-    line-height: 1;
-    vertical-align: middle;
 
-  .data h2, .weather h2 {
-    margin-left: -1rem;
-    width: calc(100% + 2rem);
-  }
-  
+    /* .data, .weather {
+      position: absolute;
+      /* max-width: 300px; */
+      width: 260px;
+      margin: 0;
+    } */
+    /* .data {
+      top: 6rem;
+      left: 2rem;
+    } */
 
-  
+    /* .weather {
+      bottom: 4rem;
+      right: 2rem;
+    } */
+    .weather h2::after {
+      content: " ⛅";             /* the emoticon required by the spec */
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 1.2rem;         /* scale to match heading */
+      line-height: 1;
+      vertical-align: middle;
 
-  
+    .data h2, .weather h2 {
+      margin-left: -1rem;
+      width: calc(100% + 2rem);
+    }
+    
 
-  
+    
+
+    
+
+    
 
   
 }
+
+
