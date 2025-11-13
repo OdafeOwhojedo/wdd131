@@ -14,7 +14,6 @@
 
 body {
     font-family: var(--font);
-    list-style: 1.6rem;
     margin: 0;
     background-color: var(--secondary-color);
     color: var(--accent-color);
@@ -53,7 +52,7 @@ header h1 {
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem auto;
-  position: static;
+  
   width: 90%;
   max-width: 500px;
   
@@ -98,4 +97,8 @@ header h1 {
   flex-shrink: 0;
 }
 
+/* .section-icon {
+  width: 1.8rem;
+  height: auto;
+} */
 

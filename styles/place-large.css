@@ -1,6 +1,6 @@
 
-@media screen and (min-width: 700px)  {
-    .weather h2, .section-icon {
+@media screen and (min-width: 700px){
+    .weather h2 .section-icon {
       display: none;
     }
   
@@ -28,10 +28,6 @@
       line-height: 1;
       vertical-align: middle;
 
-    .data h2, .weather h2 {
-      margin-left: -1rem;
-      width: calc(100% + 2rem);
-    }
     
 
   
