@@ -14,7 +14,7 @@
 
 body {
     font-family: var(--font);
-    list-style: 1.6;
+    list-style: 1.6rem;
     margin: 0;
     background-color: var(--secondary-color);
     color: var(--accent-color);
@@ -59,7 +59,22 @@ header h1 {
   
 }
 
-.data h2, .weather h2 {
+.weather h2 {
+  background-color: var(--heading);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  position: relative; /* keeps ::after positioned relative to the h2 */
+}
+
+.data h2 {
   background-color: var(--heading);
   color: white;
   padding: 0.5rem 1rem;
@@ -78,5 +93,13 @@ header h1 {
 .section-icon {
   width: 1.8rem;
   height: auto;
+  display: inline-block;   /* visible on small screens */
+  margin-left: 0.5rem;
+  flex-shrink: 0;
 }
+
+/* .section-icon {
+  width: 1.8rem;
+  height: auto;
+} */
 
