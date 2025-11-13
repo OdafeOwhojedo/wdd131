@@ -1,13 +1,9 @@
 
-@media screen and (min-width: 700px) {
-    .weather h2 .section-icon {
+@media screen and (min-width: 700px)  {
+    .weather h2, .section-icon {
       display: none;
     }
-    
-    /* .hero {
-      position: relative;
-    } */
-
+  
     .data {
     position: absolute;
     top: 6rem;
@@ -24,21 +20,6 @@
     margin: 0;
   }
 
-    /* .data, .weather {
-      position: absolute;
-      /* max-width: 300px; */
-      width: 260px;
-      margin: 0;
-    } */
-    /* .data {
-      top: 6rem;
-      left: 2rem;
-    } */
-
-    /* .weather {
-      bottom: 4rem;
-      right: 2rem;
-    } */
     .weather h2::after {
       content: " ⛅";             /* the emoticon required by the spec */
       display: inline-block;
@@ -51,12 +32,6 @@
       margin-left: -1rem;
       width: calc(100% + 2rem);
     }
-    
-
-    
-
-    
-
     
 
   
