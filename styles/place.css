@@ -1,37 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-    --primary-color: #d32f2f;
+    --primary-color: #008000;
     --secondary-color: #ffffff;
     --accent-color: #000000;
     --font: 'Roboto', sans-serif;
-    --heading-bg: #008000;
+    --heading: #d32f2f;
 }
 
 body {
     font-family: var(--font);
+    list-style: 1.6;
     margin: 0;
     background-color: var(--secondary-color);
     color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
-/* nav a {
-    margin: 0 0.5;
-    color: white;
-    text-decoration: none;
-} */
+header h1 {
+  font-size: 1.8rem;
+}
 
-/* nav a:hover {
-    border-bottom: 2px solid white;
-} */
 
 .hero {
   position: relative;
+  /* max-width: 100%; */
 }
 
 .hero img {
@@ -40,42 +46,37 @@ header, footer {
   display: block;
 }
 
+
 .data, .weather {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   padding: 1rem;
-  border-radius: 10px;
-  margin: 1rem;
-  overflow: visible;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  
+  width: 90%;
+  max-width: 500px;
+  
 }
 
-.data h2,
-.weather h2 {
-  position: absolute;
-  top: 0;
-  right: -10px;
-  background-color: var(--heading-bg);  /* title bar color */
-  color: var(--secondary-color);           /* contrast text */
-  padding: 0.75rem 1rem;   /* spacing inside the bar */
-  width: calc(100% + 10px);
-  margin: 0;               /* remove default margin */
-  /* border-radius: 0.5rem 0.5rem 0 0; optional rounded top corners */
-  text-align: left;        /* aligns text to the left */
+.data h2, .weather h2 {
+  background-color: var(--heading);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes SVG to right */
+  font-size: 1.2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  /* margin-left: -1rem; moves title bar slightly out of section */
+  /* width: calc(100% + 2rem); make it stretch across */
 }
 
-
-/* .hero img {
-    width: 100%;
-    height: auto;
-} */
-
-section {
-    padding: 1rem;
+.section-icon {
+  width: 1.8rem;
+  height: auto;
 }
 
- .weather h2::after {
-    content: "⛅";
-    margin-left: 0.5rem;
-} 
-    
