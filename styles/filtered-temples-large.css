@@ -1,0 +1,28 @@
+/* =============================
+   RESPONSIVE BEHAVIOR
+   ============================= */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
