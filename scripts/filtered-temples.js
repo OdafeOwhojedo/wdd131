@@ -61,7 +61,7 @@ const temples = [
   {
     templeName: "Apia Samoa",
     location: "Pesega, Apia Samoa",
-    dedicated: "1983, August, 5-7",
+    dedicated: "2005, September 4",
     area: 18691,
     imageUrl:"images/apia_samoa_temple.webp"
   },
@@ -75,28 +75,28 @@ const temples = [
   {
     templeName: "Boise Idaho",
     location: "Boise, Idaho USA",
-    dedicated: "1984, May, 25-30",
+    dedicated: "2012, November, 18",
     area: 35868,
     imageUrl:"images/boise-idaho-temple.jpg"
   },
   {
     templeName: "Bern Switzerland",
     location: "Zollikofen Switzerland",
-    dedicated: "1955, September, 11-17",
+    dedicated: "1992, October, 23-25",
     area: 35546,
     imageUrl:"images/bern-switzerland-temple.jpg"
   },
   {
     templeName: "Columbus Ohio",
     location: "Columbus Ohio USA",
-    dedicated: "1999, September, 4-5",
+    dedicated: "2023, June, 4",
     area: 11745,
     imageUrl:"images/columbus-ohio-temple.jpg"
   },
   {
     templeName: "Jordan River Utah",
     location: "South Jordan, Utah",
-    dedicated: "1981, November, 16-20",
+    dedicated: "2018, May, 20",
     area: 148236,
     imageUrl:"images/jordan-river-temple.jpg"
   },
@@ -111,8 +111,22 @@ const temples = [
     templeName: "Adelaide Australia",
     location: "Marden, South Australia",
     dedicated: "2000, June, 15",
-    area: 16000,
+    area: 10700,
     imageUrl:"images/adelaide-australia-temple.jpg"
+  },
+  {
+    templeName: "Atlanta Georgia",
+    location: "Sandy Springs, Georgia",
+    dedicated: "1997, November, 14",
+    area: 34500,
+    imageUrl:"images/atlanta_temple.webp"
+  },
+  {
+    templeName: "Idaho Falls Idaho",
+    location: "Idaho Falls, Idaho",
+    dedicated: "2017, June, 4",
+    area: 85624,
+    imageUrl:"images/idaho-falls-temple.jpg"
   },
 ];
 
