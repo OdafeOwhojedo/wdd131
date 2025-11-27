@@ -5,10 +5,12 @@
 // PRODUCT ARRAY
 // -------------------------------
 const products = [
-{ id: 1, name: "Hammer" },
-{ id: 2, name: "Screwdriver" },
-{ id: 3, name: "Electric Drill" },
-{ id: 4, name: "Circular Saw" }
+{ id: 1, name: "Solar Power Generator" },
+{ id: 2, name: "Smart Rechargeable Television" },
+{ id: 3, name: "Dual Rechargeable Powered Blender" },
+{ id: 4, name: "Dual Rechargeable Powered Refrigerator" },
+{ id: 5, name: "Dual Energy Deep Freezer"},
+{ id: 6, name: "Rechargeable Ceiling Fan "}
 ];
 
 
