@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Erikevwie Odafe | An HTML form with a confirmation page ">
+    <meta name="author" content="Odafe Erikevwie">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <fieldset>
+                    <legend>Overall Rating</legend>
+                    <label><input type="radio" id="rate1" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" id="rate2" name="rating" value="2"> ☆☆</label>
+                    <label><input type="radio" id="rate3" name="rating" value="3"> ☆☆☆</label>
+                    <label><input type="radio" id="rate4" name="rating" value="4"> ☆☆☆☆</label>
+                    <label><input type="radio" id="rate5" name="rating" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="installDate" required />
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <label><input type="checkbox" id="feat1" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" id="feat2" name="features" value="design"> Design</label>
+                <label><input type="checkbox" id="feat3" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" id="feat4" name="features" value="price"> Price</label>
+            </fieldset>
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="4" placeholder="Write your review..."></textarea>
+
+
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username" placeholder="Optional" />
+
+
+             <input type="submit" value="Submit Review" />
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Odafe Erikevwie | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+        
+</body>
+</html>
