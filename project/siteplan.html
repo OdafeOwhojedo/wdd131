@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site Plan — Odafe Erikevwie African Art & Culture Explorer Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="siteplan.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="logo">
+        <!-- simple text-logo placeholder -->
+        <div class="logo-mark" aria-hidden="true">🖼️</div>
+        <div>
+          <h1>Odafe Erikevwie African Art & Culture Explorer Page</h1>
+          <p class="tagline">A small informational site celebrating African art, artists, and traditions.</p>
+        </div>
+      </div>
+
+      <div class="meta">
+        <p><strong>Document:</strong> Project Site Plan</p>
+        <p><strong>Date:</strong> <time datetime="2025-11-23">November 23, 2025</time></p>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Site Name -->
+      <section id="site-name" class="card">
+        <h2>Site Name</h2>
+        <p class="lead"><strong>Odafe Erikevwie African Art &amp; Culture Explorer Page</strong></p>
+        <p><strong>Why this name:</strong> The name clearly indicates the subject (African art and culture), supports search visibility, and is memorable for visitors interested in regional art traditions and artists.</p>
+        <p><strong>Optional domain availability (example):</strong> <em>africanartsexplorer.org</em> (check domain registrars before purchase — domain is optional for this class).</p>
+      </section>
+
+      <!-- Site Purpose -->
+      <section id="site-purpose" class="card">
+        <h2>Site Purpose</h2>
+        <p>This website provides an accessible, visually focused resource about African art traditions and contemporary artists. It will include:</p>
+        <ul>
+          <li>Introductory material (Home) explaining the purpose and scope</li>
+          <li>Art Styles page describing regional art forms (images and cultural context)</li>
+          <li>Artists page with short profiles and a dynamic, filterable gallery</li>
+          <li>Contact page with a standards-based HTML form</li>
+          <li>References page listing image and text sources</li>
+        </ul>
+        <p><strong>Target audience:</strong> Students, hobbyists, museum visitors, and anyone curious about African visual culture.</p>
+      </section>
+
+      <!-- Scenarios -->
+      <section id="scenarios" class="card">
+        <h2>User Scenarios</h2>
+        <p>Define typical questions visitors will ask — the site content should answer these clearly.</p>
+        <ol>
+          <li><strong>Scenario 1:</strong> “I’m studying for a class — where can I find a concise overview of West African metalwork and images I can cite?” <br>
+              <em>How site answers:</em> Art Styles page with Benin Bronze entry, images, short bibliography link to References page.</li>
+
+          <li><strong>Scenario 2:</strong> “I want to see contemporary African artists working with found materials — who are notable artists and what are examples of their work?” <br>
+              <em>How site answers:</em> Artists page with profiles (e.g., El Anatsui, Romuald Hazoumè) and a gallery that filters by medium and region.</li>
+
+          <li><strong>Scenario 3 (bonus):</strong> “Can I save a list of artists I like while browsing?” <br>
+              <em>How site answers:</em> Use localStorage to save visitor selections (e.g., saved favorites) and show a small “Saved favorites” state on the Artists page.</li>
+        </ol>
+      </section>
+
+      <!-- Color Schema -->
+      <section id="colors" class="card">
+        <h2>Color Scheme</h2>
+        <p>The plan uses a limited, high-contrast palette for readability and cultural warmth.</p>
+
+        <div class="palette">
+          <div class="swatch">
+            <div class="color-sample" style="background:#0c3b2e;"></div>
+            <p><strong>#0C3B2E</strong><br>Deep Green — used for headings, nav links, and primary accents.</p>
+          </div>
+
+          <div class="swatch">
+            <div class="color-sample" style="background:#F4E9DC;"></div>
+            <p><strong>#F4E9DC</strong><br>Warm Sand — background for cards and large areas.</p>
+          </div>
+
+          <div class="swatch">
+            <div class="color-sample" style="background:#C85A3B;"></div>
+            <p><strong>#C85A3B</strong><br>Terracotta (accent) — buttons, call-to-action, card highlights.</p>
+          </div>
+        </div>
+
+        <p><strong>Where used:</strong></p>
+        <ul>
+          <li>Headings & navigation: <code>#0C3B2E</code></li>
+          <li>Background (page / card areas): <code>#F4E9DC</code></li>
+          <li>Buttons / CTAs / hover states: <code>#C85A3B</code></li>
+          <li>Body text: dark gray/near-black for readability (not the deep green)</li>
+        </ul>
+      </section>
+
+      <!-- Typography -->
+      <section id="typography" class="card">
+        <h2>Typography</h2>
+        <p>Chosen fonts (Google Fonts):</p>
+        <ul>
+          <li><strong>Merriweather</strong> — used for headings (H1, H2). A serif with warmth and good display presence.</li>
+          <li><strong>Inter</strong> — used for body text and UI (nav, buttons). A legible, modern sans-serif for small sizes.</li>
+        </ul>
+        <p><strong>Font usage:</strong></p>
+        <ul>
+          <li>Headings (H1, H2, H3): <code>Merriweather</code>, 700 weight.</li>
+          <li>Body, captions, UI: <code>Inter</code>, 300–400–600 weights.</li>
+        </ul>
+        <p>Limit fonts to these two to keep load times low and maintain visual consistency. Use font-display: swap (handled by Google Fonts link).</p>
+      </section>
+
+      <!-- Wireframes -->
+      <section id="wireframes" class="card">
+        <h2>Wireframes</h2>
+        <p>Simple wireframe sketches for the <strong>Home page</strong>. The wireframes show the relative layout and content blocks.</p>
+
+        <h3>Mobile (portrait)</h3>
+        <!-- inline SVG wireframe: mobile -->
+         <img src="wireframe_mobile.png" alt="Wireframe mobile version">
+        
+        <h3>Desktop / Wide</h3>
+        <!-- inline SVG wireframe: desktop -->
+         <img src="wireframe_desktop.png" alt="Wireframe Desktop version">
+        
+      </section>
+
+      <!-- Content Outline -->
+      <section id="content-outline" class="card">
+        <h2>Content Outline (Pages & Key Elements)</h2>
+        <ul>
+          <li><strong>index.html</strong> — Hero, intro, featured styles, highlights, link to artists.</li>
+          <li><strong>art-styles.html</strong> — Filter buttons (by region), grid of cards with images + short descriptions, resources links.</li>
+          <li><strong>artists.html</strong> — Filterable list/gallery, profile modals or inline details, "save to favorites" using localStorage.</li>
+          <li><strong>contact.html</strong> — Accessible HTML form (name, email, message), client-side validation.</li>
+          <li><strong>references.html</strong> — Unstyled references listing image sources and text sources (to satisfy assignment). </li>
+        </ul>
+
+        <p><strong>Assets:</strong> images placed in <code>/project/images/</code> and optimized for web (jpeg/webp, appropriate sizes). Filenames will match the art style or artist slug (e.g., <code>benin-bronze.jpg</code>).</p>
+      </section>
+
+      <!-- Technical & CSS -->
+      <section id="css" class="card">
+        <h2>CSS / Technical Notes</h2>
+        <p>Files & structure (minimum):</p>
+        <pre>
+project/
+├─ index.html
+├─ art-styles.html
+├─ artists.html
+├─ contact.html
+├─ references.html
+├─ siteplan.html
+├─ css/
+|  └─ styles.css        &lt;-- main site styles (shared)
+|  └─ siteplan.css      &lt;-- styles for this document (optional)
+└─ js/
+   └─ main.js           &lt;-- dynamic behavior, arrays &amp; objects, localStorage
+   └─ contact.js        &lt;-- optional: small module for form handling
+        </pre>
+
+        <p>Key CSS decisions:</p>
+        <ul>
+          <li>Mobile-first approach. Use media queries for larger breakpoints.</li>
+          <li>Use CSS Grid for gallery and card layouts; Flexbox for nav and header layout.</li>
+          <li>Lazy loading: <code>loading="lazy"</code> on images + progressive image sizes and optimized formats.</li>
+          <li>Accessibility: focus outlines, sufficient color contrast, semantic HTML elements (nav, main, header, footer).</li>
+        </ul>
+      </section>
+
+      <!-- Testing -->
+      <section id="testing" class="card">
+        <h2>Testing & Validation Checklist</h2>
+        <p>Self-check steps and tools to use before final submission:</p>
+        <ol>
+          <li><strong>HTML validation:</strong> Use W3C Markup Validation to check for syntax errors.</li>
+          <li><strong>CSS validation:</strong> Use W3C CSS Validator or DevTools to confirm no unused/duplicate rules.</li>
+          <li><strong>JavaScript console:</strong> Open DevTools Console (Chrome/Firefox) to ensure no runtime errors.</li>
+          <li><strong>Accessibility:</strong> Use Lighthouse Accessibility audit and run manual keyboard navigation checks (tab order, ARIA where needed).</li>
+          <li><strong>Color contrast:</strong> Use DevTools CSS Overview or a contrast checker to ensure text meets WCAG AA (4.5:1 for normal text).</li>
+          <li><strong>Performance:</strong> Lighthouse Performance audit; optimize images, minimize render-blocking resources.</li>
+          <li><strong>Best practices & SEO:</strong> Lighthouse Best Practices and SEO audits; include descriptive meta tags and alt text for images.</li>
+          <li><strong>Responsiveness:</strong> Test in mobile, tablet, and desktop viewports; verify breakpoints and layout changes.</li>
+          <li><strong>Functional tests:</strong> filter buttons, localStorage save/restore, contact form validation and success state.</li>
+        </ol>
+
+        <p>Document any issues and fixes in a short <em>project-notes.md</em> file prior to submission.</p>
+      </section>
+
+      <!-- Accessibility & Privacy -->
+      <section id="accessibility" class="card">
+        <h2>Accessibility & Privacy Considerations</h2>
+        <ul>
+          <li>Provide <code>alt</code> text for every image — short descriptive text and credit in References page.</li>
+          <li>Use semantic HTML elements and ARIA only when necessary (avoid misuse).</li>
+          <li>Make form privacy clear: the contact form will not store personal data beyond localStorage for "visitorName" (used only to personalize messages). No backend storage is required for this class.</li>
+        </ul>
+      </section>
+      <section></section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Prepared by: <strong>Odafe Erikevwie</strong> — <em>Odafe African Art &amp; Culture Explorer Page</em></p>
+      <p><a href="references.html">References</a> | Project folder: <code>/project/</code></p>
+    </footer>
+  </div>
+</body>
+</html>
