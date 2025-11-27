@@ -43,17 +43,33 @@
 
                <label for="rate5">
                     <input type="radio" id="rate5" name="rating" value="5" required>
-                     ☆☆☆☆☆
+                      ☆☆☆☆☆
                </label>
            </fieldset>
             <label for="install-date">Date of Installation</label>
             <input type="date" id="install-date" name="installDate" required />
             <fieldset>
-                <legend>Useful Features (Check all that apply)</legend>
-                <label><input type="checkbox" id="feat1" name="features" value="durability"> Durability</label>
-                <label><input type="checkbox" id="feat2" name="features" value="design"> Design</label>
-                <label><input type="checkbox" id="feat3" name="features" value="performance"> Performance</label>
-                <label><input type="checkbox" id="feat4" name="features" value="price"> Price</label>
+               <legend>Useful Features (Check all that apply)</legend>
+
+                <label for="feat1">
+                    <input type="checkbox" id="feat1" name="features" value="durability">
+                    Durability
+                </label>
+
+                <label for="feat2">
+                    <input type="checkbox" id="feat2" name="features" value="design">
+                    Design
+                </label>
+
+                <label for="feat3">
+                    <input type="checkbox" id="feat3" name="features" value="performance">
+                    Performance
+                </label>
+
+                <label for="feat4">
+                    <input type="checkbox" id="feat4" name="features" value="price">
+                    Price
+                </label>
             </fieldset>
             <label for="review">Written Review</label>
             <textarea id="review" name="review" rows="4" placeholder="Write your review..."></textarea>
