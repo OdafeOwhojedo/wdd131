@@ -1,0 +1,178 @@
+/* =========================================================
+   GLOBAL DESKTOP-FIRST STYLES
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   FORM STYLING
+   ========================================================= */
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #0077cc;
+    font-size: 1.1rem;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Radio + checkbox alignment */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit button */
+button, input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* =========================================================
+   REVIEW PAGE STYLING
+   ========================================================= */
+
+.review-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.review-item {
+    margin-bottom: 15px;
+}
+
+.review-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #0077cc;
+}
+footer {
+text-align: center;
+padding: 1rem;
+color: #555;
+}
+
+/* =========================================================
+   MEDIA QUERIES — RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------- TABLETS (screen 900px and below) ---------- */
+@media (max-width: 900px) {
+    .container,
+    .review-box {
+        width: 85%;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* ---------- MOBILE PHONES (screen 600px and below) ---------- */
+@media (max-width: 600px) {
+    .container,
+    .review-box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
