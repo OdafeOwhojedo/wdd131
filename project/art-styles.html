@@ -1,6 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odafe Erikevwie African Art & Culture Explorer Page | Notable African art styles, artists, and traditional crafts.">
+    <meta name="author" content="Odafe Erikevwie">
+
+    <title>Art Styles - Odafe Erikevwie African Art & Culture Explorer</title>
+
+    <link rel="stylesheet" href="styles/africa-art.css">
+    <script src="scripts/africa-art.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-left">
+        <img src="images/dogon-mask.webp" alt="logo" class="site-logo">
+        <h1 class="site-title">Odafe-African Art & Culture Explorer</h1>
+    </div>
+
+    <button id="hamburger" class="hamburger">☰</button>
+
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="art-styles.html" class="active">Art Styles</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Art Styles</h2>
+        <p>Filter by region or search for an art style.</p>
+
+        <!-- MATCHING THE ARTISTS PAGE LAYOUT -->
+        <div class="style-controls">
+
+            <select id="style-region">
+                <option value="all">All Regions</option>
+                <option value="west">West Africa</option>
+                <option value="east">East Africa</option>
+                <option value="central">Central Africa</option>
+                <option value="south">Southern Africa</option>
+            </select>
+
+            <input id="style-search" type="search" placeholder="Search art styles…">
+        </div>
+
+        <div id="stylesGrid" class="grid mt-small"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Odafe-African Art &amp; Culture Explorer</p>
+</footer>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -15,11 +83,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet"> -->
 
-</head>
-<body>
+<!-- </head> --> -->
+<!-- <body>
     <header class="site-header">
     <div class="header-left">
       <img src="images/dogon-mask.webp" alt="logo" class="site-logo" />
@@ -61,5 +129,5 @@
     <p>&copy; 2025 African Art &amp; Culture Explorer</p>
   </footer>
 
-</body>
-</html>
+</body> -->
+<!-- </html> -->

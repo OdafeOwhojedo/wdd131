@@ -3,40 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>African Art & Culture Explorer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
+    <title>Odafe-African Art & Culture Explorer</title>
+
+    <meta name="description" content="Explore African art, culture, and history through African art styles, artists, and traditional crafts. A digital experience by Odafe Erikevwie.">
+    <meta name="author" content="Odafe Erikevwie">
+
+    <link rel="stylesheet" href="styles/africa-art.css">
+    <script src="scripts/africa-art.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>African Art & Culture Explorer</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="art-styles.html">Art Styles</a>
-            <a href="artists.html">Artists</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/hero.jpg" alt="African Art" loading="lazy">
-            <h2>Discover the Beauty of African Creativity</h2>
-        </section>
+<header class="site-header">
+    <div class="header-left">
+        <img src="images/dogon-mask.webp" alt="Site Logo" class="site-logo">
+        <h1 class="site-title">Odafe-African Art & Culture Explorer</h1>
+    </div>
 
-        <section>
-            <h3>Welcome</h3>
-            <p>
-                Explore traditional African art styles, meet the artists, and learn about cultural expressions 
-                shaped over centuries.
-            </p>
-        </section>
-    </main>
+    <button id="hamburger" class="hamburger" aria-label="Open navigation">☰</button>
 
-    <footer>
-        <p>&copy; 2025 African Art Explorer</p>
-        <a href="references.html">References</a>
-    </footer>
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="art-styles.html">Art Styles</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to the African Art & Culture Explorer</h2>
+            <p>Discover the beauty and diversity of African traditional arts, master artists, and timeless cultural expressions.</p>
+            <a class="btn" href="art-styles.html">Start Exploring</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-african-art.webp" alt="African Art Collage">
+        </div>
+    </section>
+
+    <!-- FEATURED STYLES -->
+    <section class="card">
+        <h2>Featured Art Styles</h2>
+        <div id="featured-styles" class="grid mt-small"></div>
+        <a class="btn mt-small" href="art-styles.html">View All Art Styles</a>
+    </section>
+
+    <!-- FEATURED ARTISTS -->
+    <section class="card">
+        <h2>Featured Artists</h2>
+        <div id="featured-artists" class="grid mt-small"></div>
+        <a class="btn mt-small" href="artists.html">View All Artists</a>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Odafe-African Art & Culture Explorer</p>
+</footer>
+
 </body>
 </html>

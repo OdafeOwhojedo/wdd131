@@ -121,4 +121,35 @@ main, header, footer { width:100%; max-width:var(--max-width); margin:0 auto; }
     box-shadow:var(--shadow); 
 }
 
+/* --- Art Styles Control Bar (same as Artists page) --- */
+.style-controls {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.style-controls select,
+.style-controls input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+/* --- Contact Page Fixes --- */
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
 
