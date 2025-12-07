@@ -31,15 +31,17 @@ const artists = [
   { slug:"abdoulaye-konate", name:"Abdoulaye Konaté", country:"Mali", region:"west", artwork:"Large Textile Installation", img:"images/abdoulaye-konate.webp" },
   { slug:"esther-mahlangu", name:"Esther Mahlangu", country:"South Africa", region:"south", artwork:"Ndebele Mural Series", img:"images/esther-mahlangu2.webp" },
   { slug:"romuald-hazoume", name:"Romuald Hazoumè", country:"Benin", region:"west", artwork:"Jerrican Masks", img:"images/romuald-hazoume3.webp"},
-  { slug:"peju-alatise", name:"Peju Alatise", country:"Nigeria", region:"west", artwork:"Dazzling Myths", img:"images/peju-alatise3.webp" },
+  { slug:"peju-alatise", name:"Peju Alatise", country:"Nigeria", region:"west", artwork:"Dazzling Myths", img:"images/peju-alatise2.webp" },
   { slug:"abena-brobbey", name:"Abena Brobbey", country:"Ghana", region:"west", artwork:"Contemporary Textile Works", img:"images/abena-brobbey.webp" },
   { slug:"nnenna-okore", name:"Nnenna Okore", country:"Nigeria", region:"west", artwork:"Organic Fiber Installations", img:"images/nenna-okore55.webp" },
   { slug:"aida-muluneh", name:"Aïda Muluneh", country:"Ethiopia", region:"east", artwork:"The World is 9", img:"images/aida-muluneh.webp" },
   { slug:"ibrahim-el-salahi", name:"Ibrahim El-Salahi", country:"Sudan", region:"east", artwork:"The Inevitable", img:"images/ibrahim-el-salahi.webp" },
   { slug:"hassan-hajjaj", name:"Hassan Hajjaj", country:"Morocco", region:"north", artwork:"Kesh Angels", img:"images/hassan-hajjaj.webp" },
-  { slug:"cheri-samba", name:"Chéri Samba", country:"DR Congo", region:"central", artwork:"Popular Paintings", img:"images/cheri-samba.webp" },
+  { slug:"cheri-samba", name:"Chéri Samba", country:"DR Congo", region:"central", artwork:"Popular Paintings", img:"images/cheri_samba.webp" },
   { slug:"ablade-glover", name:"Ablade Glover", country:"Ghana", region:"west", artwork:"Market Scenes", img:"images/ablade-glover.webp" },
-  { slug:"lalla-essaydi", name:"Lalla Essaydi", country:"Morocco", region:"north", artwork:"Les Femmes du Maroc", img:"images/lalle-essaydi.webp" }
+  { slug:"lalla-essaydi", name:"Lalla Essaydi", country:"Morocco", region:"north", artwork:"Les Femmes du Maroc", img:"images/lalle-essaydi.webp" },
+  {slug:"william-kentridge", name:"William Kentridge", country:"South Africa", region:"south",artwork:"Master of charcoal drawings", img:"images/william-kentridge.webp"},
+  {slug:"julie-mehretu", name:"Julie Mehretu", country:"Ethiopia", region:"east",artwork:"Massive layered abstract paintings", img:"images/julie-mehretu.webp"}
 ];
 
 // ---------------------------
@@ -177,6 +179,29 @@ function saveToggle(slug){
   localStorage.setItem(LS_KEY, JSON.stringify(arr));
   return arr;
 }
+// Dropdown filter for Art Styles
+const styleRegion = document.getElementById('style-region');
+
+if (styleRegion) {
+  styleRegion.addEventListener('change', () => {
+    const region = styleRegion.value;
+
+    // combine region filter + search filter
+    const searchValue = $('#style-search')?.value.trim().toLowerCase() || '';
+
+    let filtered = filterStylesByRegion(region);
+
+    if (searchValue.length) {
+      filtered = filtered.filter(s =>
+        s.name.toLowerCase().includes(searchValue) ||
+        s.description.toLowerCase().includes(searchValue)
+      );
+    }
+
+    renderStylesGrid(filtered);
+  });
+}
+
 
 // ---------------------------
 // ATTACH FAVORITE BUTTONS
